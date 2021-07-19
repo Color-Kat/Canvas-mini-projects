@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #c1{
+            width: 400px;
+            height: 200px;
+            border: 3px solid black;
+            margin: 40px;
+            background-image: url(setka.png);
+        }
+    </style>
+</head>
+<body>
+    
+    <canvas id="c1" width="400" height="200"></canvas>
+
+    <script>
+        let canvas = document.querySelector('#c1');
+        let ctx = canvas.getContext('2d');
+        ctx.fillStyle = 'green';
+        ctx.fillRect(100, 50, 150, 75);
+        ctx.fillStyle = 'blue';
+        ctx.fillRect(150, 100, 200,150);
+        // ctx.fillRect(x, y, width, height);
+
+        ctx.strokeStyle = 'orange';
+        ctx.lineWidth = '15';
+        ctx.clearRect(0, 0, 400, 200);
+        ctx.rect(45, 32, 100, 150);
+        ctx.stroke();
+        ctx.fill();
+
+    </script>
+</body>
+</html>
